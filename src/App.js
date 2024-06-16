@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import MultiStepForm from './components/MultiStepForm/MultiStepForm';
+import Footer from './components/Footer/Footer';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+        <main >
+        <div className='titre'>
+          <h1>DE NOUVELLES ÉMOTIONS COMMENCENT ICI</h1>
+          <p>Réservez un essai gratuitement en remplissant le formulaire et faites
+        connaissance avec l’univers Alfa Romeo.</p>
+        </div>
+          <MultiStepForm />
+        </main>
+      <Footer />
     </div>
   );
 }

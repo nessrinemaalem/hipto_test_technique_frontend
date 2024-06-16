@@ -1,0 +1,22 @@
+.form {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 45%;
+	height: auto;
+	padding: 20px;
+	margin: 67px;
+	background-color: rgba(169, 169, 169, 0.2);
+	border-radius: 10px;
+}
+
+button {
+	color: #1b1f2a;
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 50px;
+	width: 100px;
+}

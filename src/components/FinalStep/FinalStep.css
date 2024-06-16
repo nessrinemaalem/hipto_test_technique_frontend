@@ -1,0 +1,29 @@
+.final-step {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+label {
+	display: block;
+	margin: 5px;
+}
+
+h2 {
+	font-weight: normal;
+}
+
+.grid {
+	display: block;
+	margin-bottom: 20px;
+}
+
+input {
+	background-color: #1b1f2a;
+	color: gray;
+	padding: 8px;
+	border-radius: 50px;
+	box-shadow: none;
+	outline: none;
+	width: 250px;
+}

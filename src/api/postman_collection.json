@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "11446da1-f8f2-4efe-844f-c3f0764c3ac5",
+		"name": "Cas Pratique : Front End Dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11117258",
+		"_collection_link": "https://hipto-tlg.postman.co/workspace/Sandbox~33b3b662-5384-4615-a088-a7541a1f6c95/collection/11117258-11446da1-f8f2-4efe-844f-c3f0764c3ac5?action=share&source=collection_link&creator=11117258"
+	},
+	"item": [
+		{
+			"name": "Envoie du lead",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\": {\n        \"type_modele\": \"\",\n        \"achat_ou_leasing\": \"\",\n        \"vehicule_actuel\": \"\",\n        \"nom\": \"\",\n        \"prenom\": \"\",\n        \"ville\": \"\",\n        \"telephone\": \"\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hooks.zapier.com/hooks/catch/6844401/3sjq5ou/?em=test@hipto.com",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"zapier",
+						"com"
+					],
+					"path": [
+						"hooks",
+						"catch",
+						"6844401",
+						"3sjq5ou",
+						""
+					],
+					"query": [
+						{
+							"key": "em",
+							"value": "test@hipto.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Code Postal > Ville",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://geo.api.gouv.fr/communes?codePostal=78000",
+					"protocol": "https",
+					"host": [
+						"geo",
+						"api",
+						"gouv",
+						"fr"
+					],
+					"path": [
+						"communes"
+					],
+					"query": [
+						{
+							"key": "codePostal",
+							"value": "78000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
